@@ -1,0 +1,27 @@
+// Alejandro Fonseca & Leonardo Nava
+
+Function FindPreferredStartingCity(city_distances, fuel, mpg):
+    # Determine the total number of cities
+    num_cities = Length(city_distances)
+    
+    # Convert fuel to travelable miles by multiplying with MPG
+    travel_range = [fuel[i] * mpg for i in Range(num_cities)]
+    
+    # Track the starting city index
+    preferred_start = 0
+    current_fuel = 0
+    min_fuel_balance = 0
+    
+    # Compute the fuel balance while traversing cities
+    For i from 0 to num_cities - 1:
+        # Update the current fuel balance
+        current_fuel += travel_range[i] - city_distances[i]
+        
+        # If balance goes negative, reset tracking variables
+        If current_fuel < min_fuel_balance:
+            min_fuel_balance = current_fuel
+            preferred_start = i + 1
+    
+    # Return the index of the valid starting city
+    Return preferred_start % num_cities
+
