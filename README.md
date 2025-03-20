@@ -15,8 +15,8 @@ This program analyzes the movement paths of animals based on recorded GPS coordi
  
  ### **1. Clone the Repository**
  ```sh
- git clone https://github.com/your-username/wildlife-movement-analysis.git
- cd wildlife-movement-analysis
+ git clone https://github.com/alejandro-garf/AlgoProject1.git
+ cd Algo1
  ```
  
  ### **2. Compile the Program**
@@ -99,8 +99,8 @@ To compile and run this C++ program, ensure you have:
 
 ### **1. Clone the Repository**  
 ```sh
-git clone https://github.com/your-username/circular-road-trip.git
-cd circular-road-trip
+git clone https://github.com/alejandro-garf/AlgoProject1.git
+cd Algo2
 ```
 
 ### **2. Compile the Program**  
