@@ -1,3 +1,4 @@
+# Alendro Fonseca && Leoanardo Nava
 # Wildlife Movement Cycle Detection - Algo 1
 
 ## Overview
