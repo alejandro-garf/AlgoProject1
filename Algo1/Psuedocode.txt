@@ -1,0 +1,29 @@
+Function cycle_detection(n, coordinates):
+    Create an empty adjacency list= ‘'graph'
+    
+    For each (u, v) in coordinates:
+        Add v to graph[u]
+        Add u to graph[v] 
+
+    Create an empty set = 'visited'
+
+    Define DFS(node, parent):
+        Mark node as visited
+
+        For each neighbor in graph[node]:
+            If neighbor is not visited:
+                If DFS(neighbor, node) returns True:
+                    Return True  (Loop detected)
+            Else if neighbor is not parent:
+                Return True  (Loop detected)
+
+        Return False
+
+    For each node in graph:
+        If node is not visited:
+            If DFS(node, -1) returns True:
+                Print "Loop detected"
+                Return
+
+    Print "No loop detected"
+
